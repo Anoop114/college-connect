@@ -7,9 +7,9 @@
         <div class="row">
         	<div class="col-sm-5">
             <div class="intro-texts">
-            	<h1 class="text-white">Make Cool Friends !!!</h1>
-            	<p>Friend Finder is a social network template that can be used to connect people. The template offers Landing pages, News Feed, Image/Video Feed, Chat Box, Timeline and lot more. <br /> <br />Why are you waiting for? Buy it now.</p>
-              <button class="btn btn-primary">Learn More</button>
+            	<h1 class="text-white" style="color: #60ccff; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">College Connect.</h1>
+            	<h3 class="text-white">Because we care about your needs.</h3>
+              
             </div>
           </div>
         	<div class="col-sm-6 col-sm-offset-1">
@@ -82,6 +82,13 @@
                         <input id="confirmPassword" class="form-control input-group-lg" type="password" name="confirm_password" title="Enter password" placeholder="Confirm Password"/>
                       </div>
                     </div>
+
+                    <div class="row">
+                      <div class="form-group col-xs-12">
+                        <label for="alter_email" class="sr-only">Alternate Email</label>
+                        <input id="alterEmail" class="form-control input-group-lg" type="email" name="alter_email" title="Enter email" placeholder="Alternate Email"/>
+                      </div>
+                    </div>
                     <div class="row">
                       
                       <div id="gender" class="form-group gender" style="margin-left: 15px;">
@@ -100,9 +107,17 @@
                   
                     <div class="row">
                       <div class="form-group col-sm-3 col-xs-6">
+                        <label for="role" class="sr-only"></label>
+                        <select class="form-control" id="role">
+                          <option value="role" disabled selected>Role</option>
+                          <option value="student">Student</option>
+                          <option value="teacher">Teacher</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-3 col-xs-6">
                         <label for="stream" class="sr-only"></label>
                         <select class="form-control" id="stream">
-                          <option value="month" disabled selected>Stream</option>
+                          <option value="stream" disabled selected>Stream</option>
                           <option value="BBA(GEN)">BBA(GEN)</option>
                           <option value="BBA(IND)">BBA(IND)</option>
                           <option value="CSE">CSE</option>
@@ -133,7 +148,7 @@
                         <input id="my-email" class="form-control input-group-lg" type="text" name="Email" title="Enter Email" placeholder="username@domain.com"/>
                       </div>
                     </div>
-                    <p>For e.g. your username@xyz.edu.in</p>
+                    <p>For e.g. your username@college-connect.in</p>
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="my-password" class="sr-only">Password</label>

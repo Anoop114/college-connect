@@ -20,7 +20,9 @@
         $("#checkAvaliability").prop("disabled", true);
         $("#password").prop("disabled", true);
         $("#confirmPassword").prop("disabled", true);
+        $("#alterEmail").prop("disabled", true);
         $("#gender").prop("disabled", true);
+        $("#role").prop("disabled", true);
         $("#stream").prop("disabled", true);
         $("#registerBtn").prop("disabled", true);
 
@@ -88,7 +90,9 @@
 
                             $("#password").prop("disabled", false);
                             $("#confirmPassword").prop("disabled", false);
+                            $("#alterEmail").prop("disabled", false);
                             $("#gender").prop("disabled", false);
+                            $("#role").prop("disabled", false);
                             $("#stream").prop("disabled", false);
                             $("#registerBtn").prop("disabled", false);
                             
@@ -117,7 +121,7 @@
                 type: "POST",
                 url: "actions.php?action=register",
                 data: "firstName=" + $("#firstname").val() + "&lastName=" + $("#lastname").val() + "&userName=" + $("#username").val()
-                        + "&password=" + $("#password").val() + "&gender=" + $radioValue + "&stream=" + $("#stream").val() + "&valID=" + $("#validateID").val(),
+                        + "&password=" + $("#password").val() + "&alterEmail=" + $("#alterEmail").val() + "&gender=" + $radioValue + "&role=" + $("#role").val() + "&stream=" + $("#stream").val() + "&valID=" + $("#validateID").val(),
                     success: function(result) {
                         
                         if (result  == 1) {
@@ -144,7 +148,7 @@
                 $.ajax({
                 type: "POST",
                 url: "actions.php?action=login",
-                data: "userName=" + $("#my-email").val() + "&password=" + $("#my-password").val(),
+                data: "email=" + $("#my-email").val() + "&password=" + $("#my-password").val(),
                     success: function(result) {
                         
                         if (result  == 1) {

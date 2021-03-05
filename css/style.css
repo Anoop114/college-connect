@@ -1460,7 +1460,6 @@ ul.online-users li span.online-dot{
   ==================================================*/
 
 .timeline-cover{
-  background: url("http://placehold.it/1030x360") no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 360px;
@@ -1475,6 +1474,7 @@ ul.online-users li span.online-dot{
   width: 100%;
   position: absolute;
   bottom: 25px;
+  border-radius: 5px;
 }
 
 .timeline-cover .timeline-nav-bar .profile-info{

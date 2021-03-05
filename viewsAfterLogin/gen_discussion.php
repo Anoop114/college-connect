@@ -1,22 +1,22 @@
-
 <div id="page-contents">
     <div class="container">
         <div class="row">
-
+      
             <!-- Newsfeed Common Side Bar Left
             ================================================= -->
             <div class="col-md-3 static">
-            <div class="">
-                <img style="height: 185px; width: 200px;" src="images/clg_logo.png" alt="user" class="profile-photo" />
-            </div><!--profile card ends-->
-            <br>
-            <ul class="nav-news-feed">
-                <li><i class="icon ion-ios-people"></i><div><a href="?p=prof">My profile</a></div></li>
-                <li><i class="icon ion-ios-people-outline"></i><div><a href="?p=acad">Academics</a></div></li>
-                <li><i class="icon ion-chatboxes"></i><div><a href="?p=chat">Chatroom</a></div></li>
-                <li><i class="icon ion-images"></i><div><a href="?p=genDis">General Discussion</a></div></li>
-            </ul><!--news-feed links ends-->
+                <div class="">
+                    <img style="height: 200px; width: 200px;" src="http://placehold.it/300x300" alt="user" class="profile-photo" />
+                </div><!--profile card ends-->
+                <br>
+                <ul class="nav-news-feed">
+                    <li><i class="icon ion-ios-people"></i><div><a href="?p=prof">My profile</a></div></li>
+                    <li><i class="icon ion-ios-people-outline"></i><div><a href="?p=acad">Academics</a></div></li>
+                    <li><i class="icon ion-chatboxes"></i><div><a href="?p=chat">Chatroom</a></div></li>
+                    <li><i class="icon ion-images"></i><div><a href="?p=genDis">General Discussion</a></div></li>
+                </ul><!--news-feed links ends-->
             </div>
+
 
             <div class="col-md-7">
 
@@ -59,46 +59,6 @@
                 <!-- Post Content
                 ================================================= -->
                 <div class="post-content">
-                  <video class="post-video" controls> <source src="videos/1.mp4" type="video/mp4"> </video>
-                  <div class="post-container">
-                    <img src="http://placehold.it/300x300" alt="user" class="profile-photo-md pull-left" />
-                    <div class="post-detail">
-                      <div class="user-info">
-                        <h5><a href="timeline.html" class="profile-link">Sophia Lee</a> <span class="following">following</span></h5>
-                        <p class="text-muted">Updated her status about 33 mins ago</p>
-                      </div>
-                      <div class="reaction">
-                        <a class="btn text-green"><i class="icon ion-thumbsup"></i> 75</a>
-                        <a class="btn text-red"><i class="fa fa-thumbs-down"></i> 8</a>
-                      </div>
-                      <div class="line-divider"></div>
-                      <div class="post-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                      </div>
-                      <div class="line-divider"></div>
-                      <div class="post-comment">
-                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm" />
-                        <p><a href="timeline.html" class="profile-link">Olivia </a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i class="em em-anguished"></i> Ut enim ad minim veniam, quis nostrud </p>
-                      </div>
-                      <div class="post-comment">
-                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm" />
-                        <p><a href="timeline.html" class="profile-link">Sarah</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                      </div>
-                      <div class="post-comment">
-                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm" />
-                        <p><a href="timeline.html" class="profile-link">Linda</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                      </div>
-                      <div class="post-comment">
-                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm" />
-                        <input type="text" class="form-control" placeholder="Post a comment">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <!-- Post Content
-                ================================================= -->
-                <div class="post-content">
                   <div class="post-container">
                     <img src="http://placehold.it/300x300" alt="user" class="profile-photo-md pull-left" />
                     <div class="post-detail">
@@ -129,8 +89,10 @@
 
             </div>
 
+
+
             <!-- Newsfeed Common Side Bar Right
-          ================================================= -->
+            ================================================= -->
             <div class="col-md-2 static">
                 <div class="suggestions" id="sticky-sidebar">
                     <h4 style="text-align: center; font-size: 30px; font-weight: bold;" class="grey">Events</h4>
@@ -171,7 +133,7 @@
                     </div>
                 </div>
             </div>
-
+      
         </div>
     </div>
 </div>

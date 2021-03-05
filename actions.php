@@ -33,10 +33,11 @@
     }
 
     if ($_GET['action'] == "register"){
-        
-        $query = "INSERT INTO users (`username`, `first_name`, `last_name`, `password`, `gender`, `stream`) VALUES ('". mysqli_real_escape_string($link, $_POST['userName'])."',
-                 '". mysqli_real_escape_string($link, $_POST['firstName'])."', '". mysqli_real_escape_string($link, $_POST['lastName'])."', '". mysqli_real_escape_string($link, $_POST['password'])."',
-                  '". mysqli_real_escape_string($link, $_POST['gender'])."', '". mysqli_real_escape_string($link, $_POST['stream'])."')";
+        $email = $_POST['userName']."@college-connect.in";
+        $query = "INSERT INTO users (`username` `email`, `first_name`, `last_name`, `password`, `alter_email`, `gender`, `role`, `stream`) VALUES ('". mysqli_real_escape_string($link, $_POST['userName'])."',
+                 '". mysqli_real_escape_string($link, $email)."','". mysqli_real_escape_string($link, $_POST['firstName'])."', '". mysqli_real_escape_string($link, $_POST['lastName'])."',
+                  '". mysqli_real_escape_string($link, $_POST['password'])."', '". mysqli_real_escape_string($link, $_POST['alterEmail'])."', '". mysqli_real_escape_string($link, $_POST['gender'])."',
+                   '". mysqli_real_escape_string($link, $_POST['role'])."', '". mysqli_real_escape_string($link, $_POST['stream'])."')";
         
         
 
@@ -62,7 +63,7 @@
 
     if ($_GET['action'] == "login"){
 
-        $query = "SELECT * FROM users WHERE username = '".mysqli_real_escape_string($link, $_POST['userName'])."' LIMIT 1";
+        $query = "SELECT * FROM users WHERE email = '".mysqli_real_escape_string($link, $_POST['email'])."' LIMIT 1";
             
         $result = mysqli_query($link, $query);
         
