@@ -20,7 +20,7 @@
 
     if ($_GET['action'] == "checkUsername"){
 
-        $query = "SELECT * FROM users WHERE `username` = '".mysqli_real_escape_string($link, $_POST['username'])."' LIMIT 1";
+        $query = "SELECT * FROM users WHERE `username` = '".mysqli_real_escape_string($link, $_POST['userName'])."' LIMIT 1";
 
         $result = mysqli_query($link, $query);
 
@@ -34,7 +34,7 @@
 
     if ($_GET['action'] == "register"){
         $email = $_POST['userName']."@college-connect.in";
-        $query = "INSERT INTO users (`username` `email`, `first_name`, `last_name`, `password`, `alter_email`, `gender`, `role`, `stream`) VALUES ('". mysqli_real_escape_string($link, $_POST['userName'])."',
+        $query = "INSERT INTO users (`username`, `email`, `first_name`, `last_name`, `password`, `alter_email`, `gender`, `role`, `stream`) VALUES ('". mysqli_real_escape_string($link, $_POST['userName'])."',
                  '". mysqli_real_escape_string($link, $email)."','". mysqli_real_escape_string($link, $_POST['firstName'])."', '". mysqli_real_escape_string($link, $_POST['lastName'])."',
                   '". mysqli_real_escape_string($link, $_POST['password'])."', '". mysqli_real_escape_string($link, $_POST['alterEmail'])."', '". mysqli_real_escape_string($link, $_POST['gender'])."',
                    '". mysqli_real_escape_string($link, $_POST['role'])."', '". mysqli_real_escape_string($link, $_POST['stream'])."')";
@@ -52,6 +52,9 @@
                                                 WHERE `clg_id` = '".mysqli_real_escape_string($link, $_POST['valID'])."' LIMIT 1";
                 mysqli_query($link, $query);
                 echo 1;
+
+                $_SESSION['id'] = $row['id'];
+
             }
 
             

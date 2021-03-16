@@ -743,7 +743,7 @@ textarea{
   ==================================================*/  
 
 #lp-register{
-  background: linear-gradient(to right, rgba(0,0,0, 0.7) , rgba(0,0,0, 0.7)), url("http://placehold.it/1920x1280") fixed no-repeat;
+  background: linear-gradient(to right, #497784 , #435f43);
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -1462,7 +1462,7 @@ ul.online-users li span.online-dot{
 .timeline-cover{
   background-position: center;
   background-size: cover;
-  min-height: 360px;
+  min-height: 60px;
   border-radius: 0 0 4px 4px;
   position: relative;
 }

@@ -33,7 +33,7 @@
                         <div class="col-md-3">
                         
                         <!--Edit Profile Menu-->
-                        <ul class="edit-menu">
+                        <ul class="edit-menu toggle">
                             <li class="active"><i class="icon ion-ios-information-outline"></i><a href="">Basic Information</a></li>
                             <li><i class="icon ion-ios-briefcase-outline"></i><a href="">Education and Work</a></li>
                             <li><i class="icon ion-ios-heart-outline"></i><a href="">My Interests</a></li>

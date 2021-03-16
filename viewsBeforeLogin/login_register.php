@@ -2,13 +2,13 @@
 
 <!-- Landing Page Contents
     ================================================= -->
-    <div id="lp-register" style="background: #3D3D3D; height: max-content;">
+    <div id="lp-register" style="background: linear-gradient(to right, #497784 , #435f43); height: max-content;">
     	<div class="container " style="padding-top: 100px; padding-bottom: 100px;">
         <div class="row">
         	<div class="col-sm-5">
             <div class="intro-texts">
-            	<h1 class="text-white" style="color: #60ccff; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">College Connect.</h1>
-            	<h3 class="text-white">Because we care about your needs.</h3>
+            	<h1 class="text-white" style="color: #60ccff; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">College Connect</h1>
+            	<h3 class="text-white">A New Perspective.</h3>
               
             </div>
           </div>
@@ -26,7 +26,7 @@
               <!--Registration Form Contents-->
               <div class="tab-content">
                 <div class="tab-pane " id="register">
-                  <h3>Welcome to College connect !!!</h3>
+                  <h3>Welcome to College-Connect !!!</h3>
                   <br>
                   <div class="row">
                     <form name="registration_form" id='registration_form' class="form-inline">
@@ -65,9 +65,10 @@
                     
                     <div class="row">
                       <div class="form-group col-xs-12">
-                        <button id="checkAvaliability" class="btn btn-primary col-xs-6">Check Avaliability</button>
+                        <button id="checkAvaliability" class="btn btn-primary col-xs-6">Check Availability</button>
                       </div>
                     </div>
+                    <div id="validate_username" class="alert alert-success" role="alert"></div>
                   <form name="registration_form" id='registration_form' class="form-inline" style="margin-top: 15px;">
                     <div class="row">
                       <div class="form-group col-xs-12">

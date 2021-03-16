@@ -2,12 +2,16 @@
 
     include("functions.php");
 
-    include("viewsBeforeLogin/header.php");
+    if($session_id){
+        header("Location: http://localhost/college_connect/myAccount.php");
+    } else {
 
-    include("viewsBeforeLogin/login_register.php");
+        include("viewsBeforeLogin/header.php");
 
-    include("viewsBeforeLogin/footer.php");
+        include("viewsBeforeLogin/login_register.php");
 
+        include("viewsBeforeLogin/footer.php");
 
+    }
 
 ?>

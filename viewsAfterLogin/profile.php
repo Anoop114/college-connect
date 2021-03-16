@@ -13,13 +13,14 @@
                 <div class="timeline-cover">
 
                     <!--Timeline Menu for Large Screens-->
-                    <div class="timeline-nav-bar hidden-sm hidden-xs">
+                    <div class="timeline-nav-bar ">
                       
                         <div class="col-md-12">
                           <ul class="list-inline profile-menu">
                             <li><a href="timeline.html">Academic Calendar</a></li>
-                            <li><a href="timeline-about.html" class="active">Date Sheets</a></li>
+                            <li><a href="timeline-about.html" class="">Date Sheets</a></li>
                             <li><a href="timeline-album.html">Time Table</a></li>
+                            <li><a href="timeline-album.html">Syllabus</a></li>
                             <li><a href="timeline-friends.html">Results</a></li>
                           </ul>
                         </div>
@@ -78,14 +79,7 @@
                         <h4 class="grey"><i class="ion-ios-heart-outline icon-in-title"></i>Intrest</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                       </div>
-                      
-                      <div class="about-content-block">
-                        <h4 class="grey"><i class="ion-ios-chatbubble-outline icon-in-title"></i>Language</h4>
-                          <ul>
-                            <li><a href="">Russian</a></li>
-                            <li><a href="">English</a></li>
-                          </ul>
-                      </div>
+                
                     </div>
                   </div>
                 

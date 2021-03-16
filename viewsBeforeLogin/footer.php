@@ -13,6 +13,7 @@
 
         $("#verified").hide();
         $("#notVerified").hide();
+        $("#validate_username").hide();
 
         $("#firstname").prop("disabled", true);
         $("#lastname").prop("disabled", true);
@@ -81,12 +82,14 @@
                 $.ajax({
                 type: "POST",
                 url: "actions.php?action=checkUsername",
-                data: "username=" + $("#username").val(),
+                data: "userName=" + $("#username").val(),
                     success: function(result) {
                         
-                        if (result  == 1) {
+                        if (result == 1) {
                             alert("This username is already taken");
                         } else {
+
+                            $("#validate_username").show().html('Username is avaliable');
 
                             $("#password").prop("disabled", false);
                             $("#confirmPassword").prop("disabled", false);
@@ -106,7 +109,6 @@
 
         $("#registerBtn").click(function() {
             $radioValue = $("input[name='gender']:checked").val();
-            
 
             if($("#password").val() == ""){
                 alert("Please Enter your Password");
@@ -121,7 +123,8 @@
                 type: "POST",
                 url: "actions.php?action=register",
                 data: "firstName=" + $("#firstname").val() + "&lastName=" + $("#lastname").val() + "&userName=" + $("#username").val()
-                        + "&password=" + $("#password").val() + "&alterEmail=" + $("#alterEmail").val() + "&gender=" + $radioValue + "&role=" + $("#role").val() + "&stream=" + $("#stream").val() + "&valID=" + $("#validateID").val(),
+                        + "&password=" + $("#password").val() + "&alterEmail=" + $("#alterEmail").val() + "&gender=" + $radioValue 
+                        + "&role=" + $("#role").val() + "&stream=" + $("#stream").val() + "&valID=" + $("#validateID").val(),
                     success: function(result) {
                         
                         if (result  == 1) {
@@ -137,6 +140,8 @@
             }
 
         });
+        //#659664
+        //#497784
 
         $("#loginBtn").click(function() {          
 
