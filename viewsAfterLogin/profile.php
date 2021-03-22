@@ -5,9 +5,9 @@
             <div style="margin-top: 10px;" class="col-md-12 static">
                 <div class="profile-card">
                     <img style="height: 100px; width: 100px;" src="http://placehold.it/300x300" alt="user" class="profile-photo" />
-                    <h5><a href="timeline.html" class="text-white">Ashwani Goyal</a></h5>
+                    <h4><a href="" class="text-white"><?php echo $user['first_name']." ".$user['last_name'] ?></a></h4>
                     <a href="?p=profedt" class="btn btn-primary pull-right">Edit Profile</a>
-                    <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> 1,299 followers</a>
+                    <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> Student ID: <?php echo $user['roll_no'];?></a>
                 </div><!--chat block ends-->
 
                 <div class="timeline-cover">
@@ -40,7 +40,7 @@
                     ================================================= -->
                     <div class="about-profile">
                       <div class="about-content-block">
-                        <h4 class="grey"><i class="ion-ios-person-outline icon-in-title"></i>Personal Information</h4>
+                        <h4 class="grey"><i class="ion-ios-person-outline icon-in-title"></i>About</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                       </div>
                       <div class="about-content-block">

@@ -16,8 +16,48 @@
 
     <script>
 
+        $("#passAlert").hide();
         
+        $("#update-pass").click(function() {
+
+            if($("#old-password").val() == ""){
+              $("#passAlert").html("Please Enter your Old Password").show();
+            } else if($("#new-password").val() == ""){
+              $("#passAlert").html("Please Enter your New Password").show();
+            } else if($("#conf-password").val() == ""){
+              $("#passAlert").html("Please Enter your Confirm Password").show();
+            } else if($("#new-password").val() != $("#conf-password").val()){
+              $("#passAlert").html("Password does not matched").show();
+            } else {
+              $("#passAlert").hide();
+                $.ajax({
+                    type: "POST",
+                    url: "actions.php?action=updatePassword",
+                    data: "email=" + $("#myEmail").val() + "&oldPassword=" + $("#old-password").val() + "&newPassword=" + $("#new-password").val(),
+                    success: function(result) {
+                        
+                        if (result == 1) {
+
+                            alert("Your Password is successfully changed");
+                            
+                            window.location.assign("http://localhost/college_connect/?p=profedt");
+                            
+                        } else {
+                            
+                            $("#passAlert").html(result).show();
+                            
+                        }
+                    }
+                    
+                })
+            }
+
+        });
+
+            
+            
     </script>
+  
 
 
 	</body>

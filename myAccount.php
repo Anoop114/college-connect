@@ -2,9 +2,9 @@
 
     include("functions.php");
 
-    // if(!$session_id){
-    //     header("Location: http://localhost/college_connect/");
-    // } else {
+    if(!$session_id){
+        header("Location: http://localhost/college_connect/");
+    } else {
 
         include("viewsAfterLogin/header.php");
 
@@ -34,7 +34,7 @@
 
         include("viewsAfterLogin/footer.php");
 
-    //}
+    }
 
 
 ?>

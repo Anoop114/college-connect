@@ -47,7 +47,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="?p=news"><img src="images/logo.png" alt="logo" /></a>
+            <a class="navbar-brand" href="?p=news"><h3 style="color: #FFFFFF; margin-top: 0; font-weight: bold;">College-Connect</h3></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,9 +60,21 @@
 
                 </ul>
               </li>
-              <li><a href="?p=prof" class="dropdown-toggle" >
-                        <img class="user-avatar rounded-circle" style="width: 40px; height: 40px; border: 1px solid #00C292; border-radius: 50%;" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg">   
-                        </a>
+              <li>
+                  <div class="user-area dropdown float-right">
+                      
+                      <a href="?p=prof" class="dropdown-toggle active" data-toggle="dropdown">
+                            <img class="user-avatar rounded-circle" style="width: 40px; height: 40px; border: 1px solid #00C292; border-radius: 50%; margin-top: 7px;" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg">   
+                            </a>
+
+                      <div class="user-menu dropdown-menu">
+
+                        <a class="nav-link" href="?p=prof"><i class="fa fa-user"></i>My Profile</a>
+
+                          <div class="text-center"><a href="?function=logout" class="btn btn-danger ">Logout</a></div>
+
+                      </div>
+                  </div>  
               </li>
             </ul>
 
@@ -71,3 +83,15 @@
       </nav>
     </header>
     <!--Header End-->
+
+
+<?php
+
+    $query = "SELECT * FROM users WHERE `id` = '".mysqli_real_escape_string($link, $_SESSION['id'])."' LIMIT 1";
+
+    $result = mysqli_query($link, $query);
+
+    $user = mysqli_fetch_assoc($result);
+
+
+?>

@@ -122,13 +122,13 @@
                 $.ajax({
                 type: "POST",
                 url: "actions.php?action=register",
-                data: "firstName=" + $("#firstname").val() + "&lastName=" + $("#lastname").val() + "&userName=" + $("#username").val()
+                data: "clg_id=" + $("#validateID").val() + "&firstName=" + $("#firstname").val() + "&lastName=" + $("#lastname").val() + "&userName=" + $("#username").val()
                         + "&password=" + $("#password").val() + "&alterEmail=" + $("#alterEmail").val() + "&gender=" + $radioValue 
                         + "&role=" + $("#role").val() + "&stream=" + $("#stream").val() + "&valID=" + $("#validateID").val(),
                     success: function(result) {
                         
                         if (result  == 1) {
-                            window.location.assign("http://localhost/college_connect/myAccount.php");
+                            window.location.assign("http://localhost/college_connect/");
                         } else {
 
                             alert(result);
@@ -157,7 +157,7 @@
                     success: function(result) {
                         
                         if (result  == 1) {
-                            window.location.assign("http://localhost/college_connect/myAccount.php");
+                            window.location.assign("http://localhost/college_connect/");
                         } else {
 
                             alert(result);

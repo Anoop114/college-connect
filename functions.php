@@ -1,6 +1,6 @@
 <?php
 
-    //session_start();
+    session_start();
 
     $page = isset($_GET['p']) ? $_GET['p'] : '';
     $function = isset($_GET['function']) ? $_GET['function'] : '';
@@ -15,13 +15,13 @@
         
     }
     
-    // if ($function == "logout") {
+    if ($function == "logout") {
         
-    //     session_unset();
-    //     header("Location: http://localhost/go-earn/");
-    //     exit();
+        session_unset();
+        header("Location: http://localhost/college_connect/");
+        exit();
         
-    // }
+    }
     
 
 ?>
